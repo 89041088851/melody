@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/Bebas Neue.woff2") format("woff2"), url("../fonts/Bebas Neue.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -67,5 +75,97 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #fff;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 54px;
+}
+
+.main__svg-image path {
+  cursor: pointer;
+  opacity: 0;
+}
+
+.main__svg-image path:hover {
+  opacity: 1;
+}
+
+.main-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-info__title {
+  margin: 0;
+  font-family: 'Bebas Neue', sans serif;
+  font-size: 37px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #635854;
+}
+
+.main-info__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-info__btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.main-info__counter {
+  font-family: 'Bebas Neue', sans serif;
+  font-weight: 400;
+  color: #635854;
+  font-size: 74px;
+  line-height: 75px;
+  margin: 10px;
+}
+
+.main-info__btn-down {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.main-info__btn-primary {
+  padding: 16px 36px;
+  background-color: #3596F5;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  opacity: 0.90;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
