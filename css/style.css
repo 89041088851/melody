@@ -6,11 +6,6 @@
   font-display: swap;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -27,12 +22,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .navbar__menu {
@@ -92,6 +81,10 @@ body {
 }
 
 .main__svg-image path:hover {
+  opacity: 1;
+}
+
+path.main__svg-image__current-floor {
   opacity: 1;
 }
 
